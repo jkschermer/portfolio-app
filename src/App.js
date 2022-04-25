@@ -1,25 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
+import Burger from './components/burger/burger';
+import Menu from './components/menu/menu';
+import { ThemeProvider } from 'styled-components';
+import {theme} from './theme';
+import { GlobalStyles } from './global';
+import selfie from './selfie_jason.jpg';
 
 function App() {
+  const [open, setOpen] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <div className="container"> <img className="profilePic" src={selfie} alt="selfie"/>
+      </div> 
+      <>
+      <GlobalStyles/>
+        <div>
+        <Burger open={open} setOpen={setOpen}/>
+        <Menu open={open} setOpen={setOpen}/>
+        </div>
+      </>
+    </ThemeProvider>
   );
 }
 
