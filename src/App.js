@@ -6,6 +6,7 @@ import { ThemeProvider } from 'styled-components';
 import {theme} from './theme';
 import { GlobalStyles } from './global';
 import selfie from './components/images/selfie_jason.jpg';
+import Home from './components/home';
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -14,13 +15,10 @@ function App() {
     <ThemeProvider theme={theme}>
       <div className="container"> <img className="profilePic" src={selfie} alt="selfie"/>
       </div> 
-      <>
+      <Home/>
       <GlobalStyles/>
-        <div>
         <Burger open={open} setOpen={setOpen}/>
         <Menu open={open} setOpen={setOpen}/>
-        </div>
-      </>
     </ThemeProvider>
   );
 }
