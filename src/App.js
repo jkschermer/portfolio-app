@@ -5,7 +5,7 @@ import Menu from './components/menu/menu';
 import { ThemeProvider } from 'styled-components';
 import {theme} from './theme';
 import { GlobalStyles } from './global';
-import selfie from './selfie_jason.jpg';
+import selfie from './components/images/selfie_jason.jpg';
 
 function App() {
   const [open, setOpen] = useState(false);
