@@ -8,4 +8,5 @@ export const theme = {
     primaryHover: '#343078',
     primaryWhite: '#e6f1ff',
     desktop: '736px',
+    mobile: '600px'
   }

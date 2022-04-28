@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const StyledMenu = styled.nav`
-  font-family: 'OpenSansLight';
+  color: ${({ theme }) => theme.primaryWhite};
   display: flex;
   flex-direction: column;
   justify-content: center;

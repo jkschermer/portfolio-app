@@ -11,7 +11,7 @@ export const GlobalStyles = createGlobalStyle`
   body {
     display: flex;
     background: ${({ theme }) => theme.primaryNavy};
-    color: ${({ theme }) => theme.primaryLight};
+    color: ${({ theme }) => theme.primaryWhite};
     height: 100vh;
     text-rendering: optimizeLegibility;
     font-family: 'OpenSansLight';

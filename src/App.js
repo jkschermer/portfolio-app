@@ -13,12 +13,11 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <div className="container"> <img className="profilePic" src={selfie} alt="selfie"/>
-      </div> 
-      <Home/>
       <GlobalStyles/>
         <Burger open={open} setOpen={setOpen}/>
         <Menu open={open} setOpen={setOpen}/>
+          <div className='container'><img className="profilePic" src={selfie} alt="selfie"/></div>
+        <Home/>
     </ThemeProvider>
   );
 }

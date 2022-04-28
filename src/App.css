@@ -1,22 +1,24 @@
 .profilePic {
-  width: 55px;
-  height: 55px;
   border-radius: 50%;
   margin-left: 1rem;
   margin-top: 1.4rem;
+  width: 55px; 
+  height: 55px;
 
-  @media only screen and (min-width: 730px) {
-   margin: auto;
-   width: auto;
-   height: 200px;
-  }
+  /* @media only screen and (min-width: ( theme ) => theme.desktop) {
+   margin: auto; 
+   width: 1000px;
+   height: 100px;
+  } */
 }
 
 .container {
-  display: flex;
-
-  @media only screen and (min-width: 730px) {
+  @media only screen and (min-width: ( theme ) => theme.desktop) {
+    display: flex;
     justify-content: center;
     align-items: center;
   }
+  
+  justify-content: left;
+  align-items: left;
 }
